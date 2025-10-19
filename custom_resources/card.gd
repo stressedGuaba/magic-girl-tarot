@@ -11,5 +11,3 @@ enum Target {SELF, SINGLE_ENEMY, ALL_ENEMIES, EVERYONE}
 
 func is_single_targeted() -> bool:
 	return target == Target.SINGLE_ENEMY
-	
-	

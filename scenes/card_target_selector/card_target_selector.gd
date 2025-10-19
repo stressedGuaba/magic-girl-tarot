@@ -62,7 +62,7 @@ func _on_card_aim_ended(_card: CardUI) -> void:
 	current_card = null
 
 func _on_area_2d_area_entered(area : Area2D) -> void:
-	if not current_card or not targeting: 
+	if not current_card or not targeting:
 		return
 	
 	if not current_card.targets.has(area):

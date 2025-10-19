@@ -1,6 +1,6 @@
 extends CardState
 
-const DRAG_MINIMUM_THRESHOLD := 0.5
+const DRAG_MINIMUM_THRESHOLD := 0.05
 
 var minimum_drag_time_elapsed := false
 
@@ -16,6 +16,9 @@ func enter() -> void:
 	minimum_drag_time_elapsed = false
 	var threshold_timer := get_tree().create_timer(DRAG_MINIMUM_THRESHOLD, false)
 	threshold_timer.timeout.connect(func(): minimum_drag_time_elapsed = true)
+
+func exit() -> void:
+	Events.card_drag_ended.emit(card_ui)
 
 func on_input(event: InputEvent) -> void:
 	var single_targeted := card_ui.card.is_single_targeted()

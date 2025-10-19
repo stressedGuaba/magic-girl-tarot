@@ -17,6 +17,7 @@ var tween: Tween
 
 func _ready() -> void: 
 	card_state_machine.init(self)
+	
 
 func _input(event: InputEvent) -> void:
 	card_state_machine.on_input(event)
