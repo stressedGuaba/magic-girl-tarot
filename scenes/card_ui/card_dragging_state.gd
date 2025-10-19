@@ -7,7 +7,7 @@ func enter() -> void:
 		
 	##once again debugging
 	card_ui.color.color = Color.NAVY_BLUE
-	card_ui.state_text = "DRAGGING"
+	card_ui.state.text = "DRAGGING"
 	
 func on_input(event: InputEvent) -> void:
 	##release or base

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dw6qdjpatlg1q"]
+[gd_scene load_steps=5 format=3 uid="uid://dw6qdjpatlg1q"]
 
 [ext_resource type="Texture2D" uid="uid://cf6y2blx44qtm" path="res://TEMP assets/backgroundT.png" id="1_ha178"]
+[ext_resource type="Script" uid="uid://c0wd7y5oqi46c" path="res://scenes/ui/hand.gd" id="2_jl7sv"]
 [ext_resource type="PackedScene" uid="uid://bkj1sbhmhfg3m" path="res://scenes/card_ui/card_ui.tscn" id="2_mpo2y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p1qf1"]
@@ -36,6 +37,7 @@ offset_right = 337.5
 grow_horizontal = 2
 grow_vertical = 0
 alignment = 1
+script = ExtResource("2_jl7sv")
 
 [node name="CardUI" parent="BattleUI/Hand" instance=ExtResource("2_mpo2y")]
 layout_mode = 2
