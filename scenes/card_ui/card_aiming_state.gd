@@ -1,12 +1,15 @@
 extends CardState
 
-const MOUSE_Y_SNAPBACK_THRESHOLD := 621 ## 138
+const MOUSE_Y_SNAPBACK_THRESHOLD := 1000 ## 621 ## 138
 
 func enter() -> void:
+	card_ui.color.color = Color.WEB_PURPLE
+	card_ui.state.text = "AIMING"
 	card_ui.targets.clear()
+	
 	var offset := Vector2(card_ui.parent.size.x / 2, -card_ui.size.y / 2)
 	offset.x -= card_ui.size.x / 2
-	card_ui.animate_to_position(card_ui.parent.global_position + offset, 0.2)
+	card_ui.animate_to_position(card_ui.parent.global_position + offset, 0.2*4.5)
 	card_ui.drop_point_detector.monitoring = false
 	
 	Events.card_aim_started.emit(card_ui) #event bus
@@ -14,7 +17,7 @@ func enter() -> void:
 func exit() -> void:
 	Events.card_aim_ended.emit(card_ui)
 
-func on_input(event:InputEvent) -> void:
+func on_input(event: InputEvent) -> void:
 	var mouse_motion := event is InputEventMouseMotion
 	var mouse_at_bottom := card_ui.get_global_mouse_position().y > MOUSE_Y_SNAPBACK_THRESHOLD
 	

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxcglv403a106"
-path="res://.godot/imported/Magic Girl Tarot.icon.png-670f91a053f29323bc1e14293e6caa38.ctex"
+uid="uid://cmfvlkbpriuu8"
+path="res://.godot/imported/index.icon.png-96098a584bb713a61c1e8aa1df56a1bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://build/Magic Girl Tarot.icon.png"
-dest_files=["res://.godot/imported/Magic Girl Tarot.icon.png-670f91a053f29323bc1e14293e6caa38.ctex"]
+source_file="res://build/index.icon.png"
+dest_files=["res://.godot/imported/index.icon.png-96098a584bb713a61c1e8aa1df56a1bb.ctex"]
 
 [params]
 

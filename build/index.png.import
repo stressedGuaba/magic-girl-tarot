@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byt1pf5btvdd0"
-path="res://.godot/imported/Magic Girl Tarot.apple-touch-icon.png-ee92fbd1929f77528e8a59f5669d3490.ctex"
+uid="uid://dnosm63vdkqvu"
+path="res://.godot/imported/index.png-659c11691fe5279cf81f33eb936290a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://build/Magic Girl Tarot.apple-touch-icon.png"
-dest_files=["res://.godot/imported/Magic Girl Tarot.apple-touch-icon.png-ee92fbd1929f77528e8a59f5669d3490.ctex"]
+source_file="res://build/index.png"
+dest_files=["res://.godot/imported/index.png-659c11691fe5279cf81f33eb936290a4.ctex"]
 
 [params]
 
