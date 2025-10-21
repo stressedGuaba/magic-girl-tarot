@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardPile" load_steps=5 format=3 uid="uid://bfqjn8vdq2fcn"]
+
+[ext_resource type="Script" uid="uid://ocvsafqq5y61" path="res://custom_resources/card.gd" id="1_hgppg"]
+[ext_resource type="Script" uid="uid://o8f16lckq32p" path="res://custom_resources/card_pile.gd" id="2_3rga3"]
+[ext_resource type="Resource" uid="uid://c65mlqiccrqqs" path="res://characters/Magical Girls/Cards/axe_attack.tres" id="2_84ow2"]
+[ext_resource type="Resource" uid="uid://oktnf8pxo5m0" path="res://characters/Magical Girls/Cards/block.tres" id="3_rwi74"]
+
+[resource]
+script = ExtResource("2_3rga3")
+cards = Array[ExtResource("1_hgppg")]([ExtResource("2_84ow2"), ExtResource("2_84ow2"), ExtResource("2_84ow2"), ExtResource("2_84ow2"), ExtResource("2_84ow2"), ExtResource("3_rwi74"), ExtResource("3_rwi74"), ExtResource("3_rwi74"), ExtResource("3_rwi74"), ExtResource("3_rwi74")])
+metadata/_custom_type_script = "uid://o8f16lckq32p"
