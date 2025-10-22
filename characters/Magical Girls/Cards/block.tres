@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://oktnf8pxo5m0"]
+[gd_resource type="Resource" script_class="Card" load_steps=3 format=3 uid="uid://oktnf8pxo5m0"]
 
+[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/arrowT.png" id="1_mveca"]
 [ext_resource type="Script" uid="uid://ocvsafqq5y61" path="res://custom_resources/card.gd" id="1_tp6oa"]
 
 [resource]
@@ -7,4 +8,7 @@ script = ExtResource("1_tp6oa")
 id = "block"
 type = 1
 target = 0
+cost = 1
+icon = ExtResource("1_mveca")
+tooltip_text = ""
 metadata/_custom_type_script = "uid://ocvsafqq5y61"
