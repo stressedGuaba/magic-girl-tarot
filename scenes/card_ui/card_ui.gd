@@ -30,7 +30,7 @@ func _input(event: InputEvent) -> void:
 func play() -> void:
 	if not card: 
 		return
-		
+	
 	card.play(targets, char_stats)
 	queue_free()
 
