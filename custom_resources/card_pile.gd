@@ -7,7 +7,6 @@ signal card_pile_size_changed(cards_amount)
 
 func empty() -> bool:
 	return cards.is_empty()
-	
 
 func draw_card() -> Card: 
 	var card = cards.pop_front()
