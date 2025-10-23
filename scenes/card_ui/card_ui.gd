@@ -8,6 +8,7 @@ const DRAG_STYLEBOX := preload("res://scenes/card_ui/card_dragging_stylebox.tres
 const HOVER_STYLEBOX := preload("res://scenes/card_ui/card_hover_stylebox.tres")
 
 @export var card: Card : set = _set_card
+@export var char_stats: CharacterStats
 
 @onready var panel: Panel = $Panel
 @onready var cost: Label = $Cost
@@ -25,6 +26,13 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	card_state_machine.on_input(event)
+
+func play() -> void:
+	if not card: 
+		return
+		
+	card.play(targets, char_stats)
+	queue_free()
 
 func _on_mouse_entered() -> void:
 	card_state_machine.on_mouse_entered()

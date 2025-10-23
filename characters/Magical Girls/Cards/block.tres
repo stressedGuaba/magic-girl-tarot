@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Card" load_steps=3 format=3 uid="uid://oktnf8pxo5m0"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://oktnf8pxo5m0"]
 
-[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/arrowT.png" id="1_mveca"]
-[ext_resource type="Script" uid="uid://ocvsafqq5y61" path="res://custom_resources/card.gd" id="1_tp6oa"]
+[ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/BlockT.png" id="1_mveca"]
+[ext_resource type="Script" uid="uid://tcy2w2wtf71x" path="res://characters/Magical Girls/Cards/block.gd" id="2_blsum"]
 
 [resource]
-script = ExtResource("1_tp6oa")
+script = ExtResource("2_blsum")
 id = "block"
 type = 1
 target = 0

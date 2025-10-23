@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Card" load_steps=3 format=3 uid="uid://c65mlqiccrqqs"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c65mlqiccrqqs"]
 
 [ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/heartT.png" id="1_74a4x"]
-[ext_resource type="Script" uid="uid://ocvsafqq5y61" path="res://custom_resources/card.gd" id="1_mkhcp"]
+[ext_resource type="Script" uid="uid://7mfqvt745n1k" path="res://characters/Magical Girls/Cards/axe_attack.gd" id="2_74a4x"]
 
 [resource]
-script = ExtResource("1_mkhcp")
+script = ExtResource("2_74a4x")
 id = "axe_attack"
 type = 0
 target = 1
