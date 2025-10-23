@@ -12,7 +12,7 @@ const ARROW_OFFSET := 5 * 4.5
 func set_enemy_stats(value: Stats) -> void:
 	stats = value.create_instance()
 	
-	if not stats.stats_changed.is_connected(update_stats): 
+	if not stats.stats_changed.is_connected(update_stats):
 		stats.stats_changed.connect(update_stats)
 	
 	update_enemy()
@@ -21,9 +21,9 @@ func update_stats() -> void:
 	stats_ui.update_stats(stats)
 
 func update_enemy() -> void:
-	if not stats is Stats:
+	if not stats is Stats: 
 		return
-	if not is_inside_tree():
+	if not is_inside_tree(): 
 		await ready
 	
 	sprite_2d.texture = stats.art

@@ -6,6 +6,7 @@ extends HBoxContainer
 @onready var health: HBoxContainer = $Health
 @onready var health_label: Label = %HealthLabel
 
+## idk anymore send help TT
 
 func update_stats(stats: Stats) -> void:
 	block_label.text = str(stats.block)

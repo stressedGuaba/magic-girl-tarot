@@ -16,14 +16,15 @@ func set_character_stats(value: CharacterStats) -> void:
 	update_player()
 
 func update_player() -> void:
-	if not stats is CharacterStats:
+	if not stats is CharacterStats: 
 		return
-	if not is_inside_tree():
+	if not is_inside_tree(): 
 		await ready
-	
+
 	sprite_2d.texture = stats.art
 	update_stats()
 
+## update stats not working is it from here (?)
 func update_stats() -> void:
 	stats_ui.update_stats(stats)
 
