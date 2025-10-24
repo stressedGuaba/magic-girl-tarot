@@ -6,6 +6,8 @@ func enter() -> void:
 	played = false
 	
 	if not card_ui.targets.is_empty():
+		##hide tips after card suuccessfully executes
+		Events.tooltip_hide_requested.emit()
 		played = true
 		card_ui.play()
 

@@ -10,5 +10,5 @@ type = 1
 target = 0
 cost = 1
 icon = ExtResource("1_mveca")
-tooltip_text = ""
+tooltip_text = "[center] Gain [color=\"AAFF00\"]5[/color] shield.[/center] "
 metadata/_custom_type_script = "uid://ocvsafqq5y61"

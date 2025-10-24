@@ -1,0 +1,9 @@
+character sprite, enemy sprite, card sprite, menu/ui sprite
+
+animations + graphics *within godot*
+
+boss fight 
+
+ultimate system (use a certain amount of mana to trigger ultimate)
+
+different stats display ui (bars instead maybe)

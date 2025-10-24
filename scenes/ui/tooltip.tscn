@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7mia6b0o2oqi"]
+[gd_scene load_steps=4 format=3 uid="uid://hqqwwy843s0x"]
 
 [ext_resource type="Theme" uid="uid://dfor1aikf7ofe" path="res://main_theme.tres" id="1_7r8gd"]
+[ext_resource type="Script" uid="uid://dcu7cojhpg8bb" path="res://scenes/ui/tooltip.gd" id="2_kv0sd"]
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/heartT.png" id="3_o3msy"]
 
 [node name="Tooltip" type="PanelContainer"]
 anchors_preset = 5
@@ -11,3 +13,32 @@ offset_right = 247.5
 offset_bottom = 162.0
 grow_horizontal = 2
 theme = ExtResource("1_7r8gd")
+script = ExtResource("2_kv0sd")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TooltipIcon" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+texture = ExtResource("3_o3msy")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="TooltipText" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/line_separation = -5
+bbcode_enabled = true
+text = "tooltip description
+tooltip description"
