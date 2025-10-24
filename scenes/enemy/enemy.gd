@@ -30,10 +30,14 @@ func update_enemy() -> void:
 	arrow.position = Vector2.RIGHT * (sprite_2d.get_rect().size.x / 2 + ARROW_OFFSET)
 	update_stats()
 
+#func take_damage(damage: int) -> void:
+	#if stats.health <= 0:
+		#return #died
+		
 func take_damage(damage: int) -> void:
+	stats.take_damage(damage)
 	if stats.health <= 0:
-		return #died
-
+		queue_free()
 
 func _on_area_entered(_area: Area2D) -> void:
 	arrow.show()

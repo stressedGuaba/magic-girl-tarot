@@ -16,5 +16,5 @@ func _on_card_played(_card: Card) -> void:
 
 func _on_card_ui_reparent_requested(child: CardUI) -> void:
 	child.reparent(self)
-	var new_index := clampi(child.original_index, 0, get_child_count())
+	var new_index := clampi(child.original_index, 0, get_child_count()) 
 	move_child.call_deferred(child, new_index)
