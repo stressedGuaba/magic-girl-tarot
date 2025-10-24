@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://jp26jaskqbv6" path="res://scenes/enemy/enemy.tscn" id="2_o023q"]
 [ext_resource type="PackedScene" uid="uid://c8qiwwecu6pnx" path="res://scenes/card_target_selector/card_target_selector.tscn" id="3_5f8bu"]
 [ext_resource type="PackedScene" uid="uid://xnlt4htocda" path="res://scenes/player/player.tscn" id="3_i3j6n"]
-[ext_resource type="Resource" uid="uid://0s0kcv0hixie" path="res://enemies/ghost/test_enemy.tres" id="3_ikqpk"]
 [ext_resource type="Resource" uid="uid://dyl0itvf2ojmc" path="res://characters/Magical Girls/magical_girl_1.tres" id="4_o023q"]
+[ext_resource type="Resource" uid="uid://cpwlk4cm55ydu" path="res://enemies/ghost/ghost_enemy.tres" id="5_8cp08"]
 [ext_resource type="Script" uid="uid://c3fuyeyon35f0" path="res://scenes/player/player_handler.gd" id="8_f7rmk"]
 [ext_resource type="Script" uid="uid://d2x1pyj0lxsd4" path="res://scenes/ui/battle_ui.gd" id="8_peapi"]
 [ext_resource type="PackedScene" uid="uid://c0m54mwneuo3e" path="res://scenes/ui/mana_ui.tscn" id="11_ikqpk"]
@@ -39,7 +39,7 @@ metadata/_edit_lock_ = true
 
 [node name="Enemy" parent="." instance=ExtResource("2_o023q")]
 position = Vector2(883, 433)
-stats = ExtResource("3_ikqpk")
+stats = ExtResource("5_8cp08")
 
 [node name="Player" parent="." instance=ExtResource("3_i3j6n")]
 position = Vector2(231, 371)
