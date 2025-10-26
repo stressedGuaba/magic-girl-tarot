@@ -28,7 +28,7 @@ func setup_ai() -> void:
 	if enemy_action_picker:
 		enemy_action_picker.queue_free()
 	
-	var new_action_picker: EnemyActionPicker = stats.ai.instantiate()
+	var new_action_picker := stats.ai.instantiate() as EnemyActionPicker
 	add_child(new_action_picker)
 	enemy_action_picker = new_action_picker
 	enemy_action_picker.enemy = self
@@ -71,7 +71,6 @@ func do_turn() -> void:
 	
 	current_action.perform_action()
 
-
 func take_damage(damage: int) -> void:
 	stats.take_damage(damage)
 	if stats.health <= 0:
@@ -79,7 +78,6 @@ func take_damage(damage: int) -> void:
 
 func _on_area_entered(_area: Area2D) -> void:
 	arrow.show()
-
 
 func _on_area_exited(_area: Area2D) -> void:
 	arrow.hide()

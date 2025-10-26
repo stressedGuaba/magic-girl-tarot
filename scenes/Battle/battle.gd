@@ -21,13 +21,12 @@ func _ready() -> void:
 	start_battle(new_stats)
 	
 	#var new_stats: CharacterStats = char_stats.create_instance()
-	#battle_ui.char_stats = new_stats
+	#battle_ui.char_stats = new_stats                                                                                          
 	#
 	#Events.player_turn_ended.connect(player_handler.end_turn)
 	#Events.player_hand_discarded.connect(player_handler.start_turn) ##temp 
 	#
 	#start_battle(new_stats)
-
 
 func start_battle(stats: CharacterStats) -> void:
 	enemy_handler.reset_enemy_actions()
@@ -36,3 +35,5 @@ func start_battle(stats: CharacterStats) -> void:
 func _on_enemy_turn_ended() -> void:
 	player_handler.start_turn()
 	enemy_handler.reset_enemy_actions()
+	
+	

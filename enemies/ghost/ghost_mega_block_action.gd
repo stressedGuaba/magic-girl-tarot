@@ -1,13 +1,10 @@
 extends EnemyAction
 
-##boom 8 zero zero
-
-##once per battle
-
 @export var block := 15
 @export var hp_threshold := 6
 
 var already_used := false
+
 
 func is_performable() -> bool:
 	if not enemy or already_used:
@@ -18,8 +15,8 @@ func is_performable() -> bool:
 	
 	return is_low
 
+
 func perform_action() -> void:
-	#safety checks
 	if not enemy or not target:
 		return
 	
