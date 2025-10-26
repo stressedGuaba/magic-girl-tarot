@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="EnemyStats" load_steps=3 format=3 uid="uid://cpwlk4cm55ydu"]
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://cpwlk4cm55ydu"]
 
+[ext_resource type="PackedScene" uid="uid://dcv412bwxvipw" path="res://enemies/ghost/ghost_enemy_ai.tscn" id="1_20ot8"]
 [ext_resource type="Texture2D" uid="uid://h6623jbobhgy" path="res://TEMP assets/GhostT.png" id="1_yf0pi"]
 [ext_resource type="Script" uid="uid://d1677dm5lr460" path="res://custom_resources/enemy_stats.gd" id="1_yvvg3"]
 
 [resource]
 script = ExtResource("1_yvvg3")
+ai = ExtResource("1_20ot8")
 max_health = 10
 art = ExtResource("1_yf0pi")
 metadata/_custom_type_script = "uid://d1677dm5lr460"
