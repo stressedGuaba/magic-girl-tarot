@@ -9,13 +9,16 @@ signal stats_changed
 var health: int : set = set_health
 var block: int : set = set_block
 
+
 func set_health(value : int) -> void:
 	health = clampi(value, 0, max_health)
 	stats_changed.emit()
 
+
 func set_block(value : int) -> void:
 	block = clampi(value, 0, 999)
 	stats_changed.emit()
+
 
 func take_damage(damage : int) -> void:
 	if damage <= 0:
@@ -25,14 +28,13 @@ func take_damage(damage : int) -> void:
 	self.block = clampi(block - initial_damage, 0, block)
 	self.health -= damage
 
+
 func heal(amount : int) -> void:
 	self.health += amount
 
+
 func create_instance() -> Resource:
-	## multiple enemies from same kind - dont dock ALL enemies
 	var instance: Stats = self.duplicate()
 	instance.health = max_health
 	instance.block = 0
 	return instance
-
-##WHY CANT I FINDDD OUTTT WHAT IS WRONGGGGG AHHHHHHHHHHHHHHHHHHHH 
