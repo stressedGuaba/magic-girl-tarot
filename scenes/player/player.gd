@@ -1,6 +1,8 @@
 class_name Player
 extends Node2D
 
+const WHITE_FLASH := preload("res://TEMP assets/white_flash.tres")
+
 @export var stats: CharacterStats: set = set_character_stats
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
@@ -33,8 +35,18 @@ func take_damage(damage: int) -> void:
 	if stats.health <= 0:
 		return
 	
-	stats.take_damage(damage)
-
-	if stats.health <= 0:
-		Events.player_died.emit()
-		queue_free()
+	sprite_2d.material = WHITE_FLASH
+	
+	var tween := create_tween()
+	tween.tween_callback(Shaker.shake.bind(self, 16, 0.15))
+	tween.tween_callback(stats.take_damage.bind(damage))
+	tween.tween_interval(0.17)
+		
+	tween.finished.connect(
+		func():
+			sprite_2d.material = null
+				
+			if stats.health <= 0:
+				Events.player_died.emit()
+				queue_free()
+	)
