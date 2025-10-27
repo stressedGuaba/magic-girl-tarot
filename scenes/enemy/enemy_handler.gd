@@ -18,6 +18,7 @@ func start_turn() -> void:
 	
 	var first_enemy := get_child(0) as Enemy
 	first_enemy.do_turn()
+	print("did turn?")
 
 
 func _on_enemy_action_completed(enemy: Enemy) -> void:

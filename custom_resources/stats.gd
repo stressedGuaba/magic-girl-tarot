@@ -38,3 +38,5 @@ func create_instance() -> Resource:
 	instance.health = max_health
 	instance.block = 0
 	return instance
+
+##rage baited by godot

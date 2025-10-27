@@ -70,6 +70,7 @@ func do_turn() -> void:
 		return
 	
 	current_action.perform_action()
+	print("DMAAGE PLS")
 
 func take_damage(damage: int) -> void:
 	stats.take_damage(damage)
