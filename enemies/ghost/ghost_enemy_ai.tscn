@@ -1,25 +1,48 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcv412bwxvipw"]
+[gd_scene load_steps=12 format=3 uid="uid://dcv412bwxvipw"]
 
 [ext_resource type="Script" uid="uid://vrnruln2ql6s" path="res://scenes/enemy/enemy_action_picker.gd" id="1_mjti5"]
 [ext_resource type="Script" uid="uid://umtk05yu6dwk" path="res://enemies/ghost/ghost_attack_action.gd" id="2_xj1gv"]
 [ext_resource type="Script" uid="uid://dp44bt1sc6okx" path="res://enemies/ghost/ghost_block_action.gd" id="3_aaweh"]
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/heartT.png" id="3_da0cj"]
+[ext_resource type="Script" uid="uid://bunexvtb3iq4a" path="res://custom_resources/intent.gd" id="4_4cb06"]
 [ext_resource type="Script" uid="uid://nn3oqqha13ll" path="res://enemies/ghost/ghost_mega_block_action.gd" id="4_5swme"]
+[ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/BlockT.png" id="6_pdqs8"]
+[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/arrowT.png" id="8_fulk4"]
+
+[sub_resource type="Resource" id="Resource_gaj4u"]
+script = ExtResource("4_4cb06")
+number = "7"
+icon = ExtResource("3_da0cj")
+metadata/_custom_type_script = "uid://bunexvtb3iq4a"
+
+[sub_resource type="Resource" id="Resource_k43j5"]
+script = ExtResource("4_4cb06")
+number = "6"
+icon = ExtResource("6_pdqs8")
+metadata/_custom_type_script = "uid://bunexvtb3iq4a"
+
+[sub_resource type="Resource" id="Resource_0h4c2"]
+script = ExtResource("4_4cb06")
+number = ""
+icon = ExtResource("8_fulk4")
+metadata/_custom_type_script = "uid://bunexvtb3iq4a"
 
 [node name="GhostEnemyAi" type="Node"]
 script = ExtResource("1_mjti5")
 
 [node name="AttackAction" type="Node" parent="."]
 script = ExtResource("2_xj1gv")
+intent = SubResource("Resource_gaj4u")
 type = 1
 chance_weight = 1.0
 
 [node name="BlockAction" type="Node" parent="."]
 script = ExtResource("3_aaweh")
 block = 6
+intent = SubResource("Resource_k43j5")
 type = 1
 chance_weight = 1.0
 
 [node name="MegaBlockAction" type="Node" parent="."]
 script = ExtResource("4_5swme")
-type = 1
-chance_weight = 0.2
+intent = SubResource("Resource_0h4c2")
