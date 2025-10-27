@@ -1,7 +1,7 @@
 extends EnemyAction
 
-@export var block := 15
-@export var hp_threshold := 6
+@export var block := 7
+# @export var hp_threshold := 6
 
 
 func perform_action() -> void:
@@ -16,4 +16,5 @@ func perform_action() -> void:
 		func():
 			Events.enemy_action_completed.emit(enemy)
 	)
- 
+ ##OH MY FDUCKING GOD
+##WE MIGHT HAVE A LEAD!!

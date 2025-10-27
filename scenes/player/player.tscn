@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cno03b2w72m53" path="res://scenes/player/player.gd" id="1_xh7rj"]
 [ext_resource type="PackedScene" uid="uid://bqpsjn6qbfoph" path="res://scenes/ui/stats_ui.tscn" id="2_xh7rj"]
 
-[node name="Player" type="Node2D" groups=["Player"]]
+[node name="Player" type="Node2D" groups=["player"]]
 script = ExtResource("1_xh7rj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

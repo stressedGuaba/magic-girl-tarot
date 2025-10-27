@@ -15,8 +15,11 @@ chance_weight = 1.0
 
 [node name="BlockAction" type="Node" parent="."]
 script = ExtResource("3_aaweh")
+block = 6
 type = 1
 chance_weight = 1.0
 
 [node name="MegaBlockAction" type="Node" parent="."]
 script = ExtResource("4_5swme")
+type = 1
+chance_weight = 0.2
