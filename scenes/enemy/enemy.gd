@@ -63,10 +63,6 @@ func update_enemy() -> void:
 	setup_ai()
 	update_stats()
 
-#func take_damage(damage: int) -> void:
-	#if stats.health <= 0:
-		#return #died
-
 func do_turn() -> void:
 	stats.block = 0
 	

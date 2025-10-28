@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://dfor1aikf7ofe" path="res://main_theme.tres" id="1_7r8gd"]
 [ext_resource type="Script" uid="uid://dcu7cojhpg8bb" path="res://scenes/ui/tooltip.gd" id="2_kv0sd"]
-[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/heartT.png" id="3_o3msy"]
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="3_o3msy"]
 
 [node name="Tooltip" type="PanelContainer"]
 anchors_preset = 5

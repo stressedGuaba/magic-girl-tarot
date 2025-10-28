@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=3 uid="uid://bb11ot02bmlcl"]
+
+[ext_resource type="Script" uid="uid://vrnruln2ql6s" path="res://scenes/enemy/enemy_action_picker.gd" id="1_h4ce1"]
+[ext_resource type="Script" uid="uid://bhe1j2cygb7cj" path="res://enemies/selfish/selfish_attack_action.gd" id="2_geqlg"]
+[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/Temp Art/arrowT.png" id="3_xrssx"]
+[ext_resource type="Script" uid="uid://bunexvtb3iq4a" path="res://custom_resources/intent.gd" id="4_8oplk"]
+[ext_resource type="Script" uid="uid://cx7mq8p65wm1j" path="res://enemies/selfish/selfish_block_action.gd" id="5_b5utd"]
+[ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/Temp Art/BlockT.png" id="6_di8qp"]
+
+[sub_resource type="Resource" id="Resource_o1s05"]
+script = ExtResource("4_8oplk")
+number = "2x4"
+icon = ExtResource("3_xrssx")
+metadata/_custom_type_script = "uid://bunexvtb3iq4a"
+
+[sub_resource type="Resource" id="Resource_qf0wu"]
+script = ExtResource("4_8oplk")
+number = ""
+icon = ExtResource("6_di8qp")
+metadata/_custom_type_script = "uid://bunexvtb3iq4a"
+
+[node name="SelfishEnemyAI" type="Node"]
+script = ExtResource("1_h4ce1")
+
+[node name="SelfishAttackAction" type="Node" parent="."]
+script = ExtResource("2_geqlg")
+intent = SubResource("Resource_o1s05")
+type = 1
+chance_weight = 3.0
+
+[node name="SelfishBlockAction" type="Node" parent="."]
+script = ExtResource("5_b5utd")
+intent = SubResource("Resource_qf0wu")
+type = 1
+chance_weight = 1.0

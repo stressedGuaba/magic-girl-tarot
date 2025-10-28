@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Card" load_steps=3 format=3 uid="uid://b7j7gpk4tj0ql"]
+
+[ext_resource type="Script" uid="uid://ocvsafqq5y61" path="res://custom_resources/card.gd" id="1_eppl0"]
+[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/Temp Art/arrowT.png" id="1_o5h1f"]
+
+[resource]
+script = ExtResource("1_eppl0")
+id = "slash"
+type = 0
+target = 2
+cost = 2
+icon = ExtResource("1_o5h1f")
+tooltip_text = "[center]Deal [color=\"ff0000\"]4[/color] damage to all enemies.[/center]	"
+metadata/_custom_type_script = "uid://ocvsafqq5y61"

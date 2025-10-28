@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbsynr3txpa66"
+path="res://.godot/imported/inst.mp3-b55db942dd201cbeb0e8ac1e5752cfcc.mp3str"
+
+[deps]
+
+source_file="res://TEMP assets/Temp Audio/inst.mp3"
+dest_files=["res://.godot/imported/inst.mp3-b55db942dd201cbeb0e8ac1e5752cfcc.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

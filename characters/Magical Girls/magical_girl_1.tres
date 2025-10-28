@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dyl0itvf2ojmc"]
 
-[ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/jiraiyaT.png" id="1_vepmc"]
+[ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="1_vepmc"]
 [ext_resource type="Script" uid="uid://ichbvhh01645" path="res://custom_resources/character_stats.gd" id="2_8kly5"]
 [ext_resource type="Resource" uid="uid://bfqjn8vdq2fcn" path="res://characters/Magical Girls/magical_girl_1_starting_deck.tres" id="3_aotcf"]
 

@@ -22,6 +22,7 @@ func perform_action() -> void:
 	
 	var block_effect := BlockEffect.new()
 	block_effect.amount = block
+	block_effect.sound = sound ##sfx will be added once hours are got
 	block_effect.execute([enemy])
 	already_used = true
 	

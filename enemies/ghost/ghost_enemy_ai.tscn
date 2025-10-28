@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://vrnruln2ql6s" path="res://scenes/enemy/enemy_action_picker.gd" id="1_mjti5"]
 [ext_resource type="Script" uid="uid://umtk05yu6dwk" path="res://enemies/ghost/ghost_attack_action.gd" id="2_xj1gv"]
 [ext_resource type="Script" uid="uid://dp44bt1sc6okx" path="res://enemies/ghost/ghost_block_action.gd" id="3_aaweh"]
-[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/heartT.png" id="3_da0cj"]
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="3_da0cj"]
 [ext_resource type="Script" uid="uid://bunexvtb3iq4a" path="res://custom_resources/intent.gd" id="4_4cb06"]
 [ext_resource type="Script" uid="uid://nn3oqqha13ll" path="res://enemies/ghost/ghost_mega_block_action.gd" id="4_5swme"]
-[ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/BlockT.png" id="6_pdqs8"]
-[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/arrowT.png" id="8_fulk4"]
+[ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/Temp Art/BlockT.png" id="6_pdqs8"]
+[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/Temp Art/arrowT.png" id="8_fulk4"]
 
 [sub_resource type="Resource" id="Resource_gaj4u"]
 script = ExtResource("4_4cb06")
