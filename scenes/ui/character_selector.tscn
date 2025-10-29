@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://pksv1psf8uls"]
+
+[ext_resource type="Script" uid="uid://o0vtlv148i6s" path="res://scenes/ui/main_menu.gd" id="1_mswbi"]
+[ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="2_uigap"]
+
+[sub_resource type="Gradient" id="Gradient_hmv71"]
+colors = PackedColorArray(0.86661, 0.529818, 0.635349, 1, 1, 0.864085, 0.890951, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jfcsq"]
+gradient = SubResource("Gradient_hmv71")
+width = 225
+
+[sub_resource type="LabelSettings" id="LabelSettings_wp5rv"]
+font_size = 100
+shadow_size = 16
+shadow_color = Color(0.587757, 3.85046e-07, 0.336332, 0.376471)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mswbi"]
+font_size = 45
+shadow_size = 16
+shadow_color = Color(0.587757, 3.85046e-07, 0.336332, 0.376471)
+
+[node name="CharacterSelector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mswbi")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_jfcsq")
+
+[node name="CharacterText" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -258.0
+offset_right = 567.0
+offset_bottom = -66.0
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="CharacterText"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Jiraiya"
+label_settings = SubResource("LabelSettings_wp5rv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="CharacterText"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "just a lil silly ;3"
+label_settings = SubResource("LabelSettings_mswbi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterPortrait" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(270, 270)
+layout_mode = 0
+offset_left = 98.0
+offset_top = 297.0
+offset_right = 368.0
+offset_bottom = 567.0
+texture = ExtResource("2_uigap")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 913.0
+offset_top = 569.0
+offset_right = 1138.0
+offset_bottom = 632.0
+text = "Start"
+
+[node name="CharacterButtons" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="CharacterButtons"]
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+toggle_mode = true
