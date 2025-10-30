@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://cbsynr3txpa66" path="res://TEMP assets/Temp Audio/inst.mp3" id="3_eexbl"]
 [ext_resource type="PackedScene" uid="uid://xnlt4htocda" path="res://scenes/player/player.tscn" id="3_i3j6n"]
 [ext_resource type="Script" uid="uid://xab421yqopdw" path="res://scenes/enemy/enemy_handler.gd" id="4_8scbo"]
-[ext_resource type="Resource" uid="uid://dyl0itvf2ojmc" path="res://characters/Magical Girls/magical_girl_1.tres" id="4_o023q"]
+[ext_resource type="Resource" uid="uid://dyl0itvf2ojmc" path="res://characters/Magic Girl 1/magical_girl_1.tres" id="4_o023q"]
 [ext_resource type="Resource" uid="uid://cpwlk4cm55ydu" path="res://enemies/ghost/ghost_enemy.tres" id="6_8scbo"]
 [ext_resource type="Resource" uid="uid://iam3mw2wacql" path="res://enemies/selfish/selfish_enemy.tres" id="8_40prd"]
 [ext_resource type="Script" uid="uid://c3fuyeyon35f0" path="res://scenes/player/player_handler.gd" id="8_f7rmk"]

@@ -69,12 +69,12 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 
-[node name="Continue" type="Button" parent="VBoxContainer"]
+[node name="Load" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "continue"
 
-[node name="NewGame" type="Button" parent="VBoxContainer"]
+[node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "New Game"
 
@@ -118,6 +118,6 @@ grow_vertical = 2
 text = "¢¢¢¢"
 label_settings = SubResource("LabelSettings_my53q")
 
-[connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_continue_pressed"]
-[connection signal="pressed" from="VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Load" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dm6isgkx3fkh2"]
+
+[ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="1_3bx8p"]
+[ext_resource type="Script" uid="uid://ichbvhh01645" path="res://custom_resources/character_stats.gd" id="1_qisyh"]
+[ext_resource type="Resource" uid="uid://bfqjn8vdq2fcn" path="res://characters/Magic Girl 1/magical_girl_1_starting_deck.tres" id="3_fhup6"]
+
+[resource]
+script = ExtResource("1_qisyh")
+character_name = "Soda"
+description = "placeholder character"
+portrait = ExtResource("1_3bx8p")
+starting_deck = ExtResource("3_fhup6")
+cards_per_turn = 3
+max_mana = 4
+max_health = 27
+art = ExtResource("1_3bx8p")
+metadata/_custom_type_script = "uid://ichbvhh01645"

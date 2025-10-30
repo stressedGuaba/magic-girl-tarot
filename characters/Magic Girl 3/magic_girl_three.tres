@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://csbryykt20q2f"]
+
+[ext_resource type="Script" uid="uid://ichbvhh01645" path="res://custom_resources/character_stats.gd" id="1_7h15r"]
+[ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="1_scm3h"]
+[ext_resource type="Resource" uid="uid://bfqjn8vdq2fcn" path="res://characters/Magic Girl 1/magical_girl_1_starting_deck.tres" id="3_qi7kn"]
+
+[resource]
+script = ExtResource("1_7h15r")
+character_name = "idk"
+description = "idk man "
+starting_deck = ExtResource("3_qi7kn")
+cards_per_turn = 5
+max_mana = 3
+max_health = 24
+art = ExtResource("1_scm3h")
+metadata/_custom_type_script = "uid://ichbvhh01645"

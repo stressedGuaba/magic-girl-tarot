@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://pksv1psf8uls"]
+[gd_scene load_steps=11 format=3 uid="uid://pksv1psf8uls"]
 
-[ext_resource type="Script" uid="uid://o0vtlv148i6s" path="res://scenes/ui/main_menu.gd" id="1_mswbi"]
+[ext_resource type="Script" uid="uid://cc816jhtnjq77" path="res://scenes/ui/character_selector.gd" id="1_to3sr"]
 [ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="2_uigap"]
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="3_to3sr"]
+[ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/Temp Art/BlockT.png" id="4_gl58c"]
+[ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/Temp Art/arrowT.png" id="5_txrk6"]
 
 [sub_resource type="Gradient" id="Gradient_hmv71"]
 colors = PackedColorArray(0.86661, 0.529818, 0.635349, 1, 1, 0.864085, 0.890951, 1)
@@ -20,6 +23,8 @@ font_size = 45
 shadow_size = 16
 shadow_color = Color(0.587757, 3.85046e-07, 0.336332, 0.376471)
 
+[sub_resource type="ButtonGroup" id="ButtonGroup_uy6wb"]
+
 [node name="CharacterSelector" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -27,7 +32,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mswbi")
+script = ExtResource("1_to3sr")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -86,11 +91,91 @@ offset_bottom = 632.0
 text = "Start"
 
 [node name="CharacterButtons" type="HBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -73.0
+offset_right = 486.0
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 68
 
-[node name="Button" type="Button" parent="CharacterButtons"]
+[node name="FirstButton" type="Button" parent="CharacterButtons"]
 custom_minimum_size = Vector2(135, 135)
 layout_mode = 2
 toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_uy6wb")
+
+[node name="Icon" type="TextureRect" parent="CharacterButtons/FirstButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_to3sr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SecondButton" type="Button" parent="CharacterButtons"]
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_uy6wb")
+
+[node name="Icon" type="TextureRect" parent="CharacterButtons/SecondButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_gl58c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ThirdButton" type="Button" parent="CharacterButtons"]
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_uy6wb")
+
+[node name="Icon" type="TextureRect" parent="CharacterButtons/ThirdButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_txrk6")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/FirstButton" to="." method="_on_first_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/SecondButton" to="." method="_on_second_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/ThirdButton" to="." method="_on_third_button_pressed"]
