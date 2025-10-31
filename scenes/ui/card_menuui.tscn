@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://vl4be2mjp1na"]
+
+[ext_resource type="Script" uid="uid://bhlrqcswgpjln" path="res://scenes/ui/card_menu_ui.gd" id="1_nb0gd"]
+[ext_resource type="Theme" uid="uid://dfor1aikf7ofe" path="res://main_theme.tres" id="1_rmsy4"]
+[ext_resource type="StyleBox" uid="uid://dmcnesgpumjd1" path="res://scenes/card_ui/card_base_stylebox.tres" id="3_4ant4"]
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="4_4lnps"]
+
+[node name="CardMenuUI" type="CenterContainer"]
+offset_right = 112.5
+offset_bottom = 135.0
+size_flags_horizontal = 3
+script = ExtResource("1_nb0gd")
+
+[node name="Visuals" type="Control" parent="."]
+custom_minimum_size = Vector2(112.5, 135)
+layout_mode = 2
+theme = ExtResource("1_rmsy4")
+
+[node name="Panel" type="Panel" parent="Visuals"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("3_4ant4")
+
+[node name="Cost" type="Label" parent="Visuals"]
+layout_mode = 0
+offset_right = 45.0
+offset_bottom = 48.0
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Icon" type="TextureRect" parent="Visuals"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.5
+offset_top = -22.5
+offset_right = 22.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_4lnps")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="gui_input" from="Visuals" to="." method="_on_visuals_gui_input"]
+[connection signal="mouse_entered" from="Visuals" to="." method="_on_visuals_mouse_entered"]
+[connection signal="mouse_exited" from="Visuals" to="." method="_on_visuals_mouse_exited"]

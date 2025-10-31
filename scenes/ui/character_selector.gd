@@ -1,9 +1,12 @@
 extends Control
 
+const RUN_SCENE = preload("res://scenes/run/run.tscn")
 # magic girl = MG
 const MG_ONE := preload("res://characters/Magic Girl 1/magical_girl_1.tres")
 const MG_TWO := preload("res://characters/Magic Girl 2/magic_girl_two.tres")
 const MG_THREE := preload("res://characters/Magic Girl 3/magic_girl_three.tres")
+
+@export var run_startup: RunStartup
 
 @onready var title: Label = %Title
 @onready var description: Label = %Description
@@ -23,6 +26,9 @@ func set_current_character(new_character : CharacterStats) -> void:
 func _on_start_button_pressed() -> void:
 	# debug statement
 	print("new run with %s" % current_character.character_name)
+	run_startup.type = RunStartup.Type.NEW_RUN
+	run_startup.picked_character = current_character
+	get_tree().change_scene_to_packed(RUN_SCENE)
 
 func _on_first_button_pressed() -> void:
 	current_character = MG_ONE

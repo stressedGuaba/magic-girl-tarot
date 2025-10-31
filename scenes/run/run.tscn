@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://ckraymdpp34f2"]
+[gd_scene load_steps=4 format=3 uid="uid://ckraymdpp34f2"]
 
 [ext_resource type="PackedScene" uid="uid://cc517q06ad345" path="res://scenes/map/map.tscn" id="1_8rlou"]
+[ext_resource type="Script" uid="uid://dh3obx3e8hhes" path="res://scenes/run/run.gd" id="1_l7o68"]
+[ext_resource type="Resource" uid="uid://dm7yjlvue0s4m" path="res://scenes/run/run_startup.tres" id="2_wdonh"]
 
 [node name="Run" type="Node"]
+script = ExtResource("1_l7o68")
+run_startup = ExtResource("2_wdonh")
 
 [node name="Map" parent="." instance=ExtResource("1_8rlou")]
 

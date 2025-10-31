@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://pksv1psf8uls"]
+[gd_scene load_steps=12 format=3 uid="uid://pksv1psf8uls"]
 
 [ext_resource type="Script" uid="uid://cc816jhtnjq77" path="res://scenes/ui/character_selector.gd" id="1_to3sr"]
+[ext_resource type="Resource" uid="uid://dm7yjlvue0s4m" path="res://scenes/run/run_startup.tres" id="2_gl58c"]
 [ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="2_uigap"]
 [ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="3_to3sr"]
 [ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/Temp Art/BlockT.png" id="4_gl58c"]
@@ -33,6 +34,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_to3sr")
+run_startup = ExtResource("2_gl58c")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
