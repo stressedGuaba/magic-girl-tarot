@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://07e7mo0bab62" path="res://TEMP assets/Temp Art/jiraiyaT.png" id="1_3bx8p"]
 [ext_resource type="Script" uid="uid://ichbvhh01645" path="res://custom_resources/character_stats.gd" id="1_qisyh"]
-[ext_resource type="Resource" uid="uid://bfqjn8vdq2fcn" path="res://characters/Magic Girl 1/magical_girl_1_starting_deck.tres" id="3_fhup6"]
+[ext_resource type="Resource" uid="uid://bfqjn8vdq2fcn" path="res://characters/Magic_Girl_1/magical_girl_1_starting_deck.tres" id="3_fhup6"]
 
 [resource]
 script = ExtResource("1_qisyh")

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://b7j7gpk4tj0ql"]
 
 [ext_resource type="Texture2D" uid="uid://dco3c5tavxlgg" path="res://TEMP assets/Temp Art/arrowT.png" id="1_o5h1f"]
-[ext_resource type="Script" uid="uid://cu7w836t5tjlg" path="res://characters/Magic Girl 1/Cards/slash.gd" id="2_o5h1f"]
+[ext_resource type="Script" uid="uid://cu7w836t5tjlg" path="res://characters/Magic_Girl_1/Cards/slash.gd" id="2_o5h1f"]
 
 [resource]
 script = ExtResource("2_o5h1f")

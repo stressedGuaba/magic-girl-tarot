@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://oktnf8pxo5m0"]
 
 [ext_resource type="Texture2D" uid="uid://bku2bxkvf7yow" path="res://TEMP assets/Temp Art/BlockT.png" id="1_mveca"]
-[ext_resource type="Script" uid="uid://tcy2w2wtf71x" path="res://characters/Magic Girl 1/Cards/block.gd" id="2_blsum"]
+[ext_resource type="Script" uid="uid://tcy2w2wtf71x" path="res://characters/Magic_Girl_1/Cards/block.gd" id="2_blsum"]
 
 [resource]
 script = ExtResource("2_blsum")

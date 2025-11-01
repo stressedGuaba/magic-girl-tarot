@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://ocvsafqq5y61" path="res://custom_resources/card.gd" id="1_hgppg"]
 [ext_resource type="Script" uid="uid://o8f16lckq32p" path="res://custom_resources/card_pile.gd" id="2_3rga3"]
-[ext_resource type="Resource" uid="uid://c65mlqiccrqqs" path="res://characters/Magic Girl 1/Cards/axe_attack.tres" id="2_84ow2"]
-[ext_resource type="Resource" uid="uid://b7j7gpk4tj0ql" path="res://characters/Magic Girl 1/Cards/slash.tres" id="3_cyj44"]
-[ext_resource type="Resource" uid="uid://oktnf8pxo5m0" path="res://characters/Magic Girl 1/Cards/block.tres" id="3_rwi74"]
+[ext_resource type="Resource" uid="uid://c65mlqiccrqqs" path="res://characters/Magic_Girl_1/Cards/axe_attack.tres" id="2_84ow2"]
+[ext_resource type="Resource" uid="uid://b7j7gpk4tj0ql" path="res://characters/Magic_Girl_1/Cards/slash.tres" id="3_cyj44"]
+[ext_resource type="Resource" uid="uid://oktnf8pxo5m0" path="res://characters/Magic_Girl_1/Cards/block.tres" id="3_rwi74"]
 
 [resource]
 script = ExtResource("2_3rga3")
