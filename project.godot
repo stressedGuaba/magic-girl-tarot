@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Magic Girl Tarot"
-run/main_scene="uid://dw6qdjpatlg1q"
+run/main_scene="uid://byspf4k10dsjc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [autoload]

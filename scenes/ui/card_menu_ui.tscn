@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://vl4be2mjp1na"]
 
 [ext_resource type="Script" uid="uid://bhlrqcswgpjln" path="res://scenes/ui/card_menu_ui.gd" id="1_1as8l"]
-[ext_resource type="Resource" uid="uid://b7j7gpk4tj0ql" path="res://characters/Magic_Girl_1/Cards/slash.tres" id="2_lcbw5"]
+[ext_resource type="Resource" uid="uid://b7j7gpk4tj0ql" path="res://characters/Magic Girl 1/Cards/slash.tres" id="2_lcbw5"]
 [ext_resource type="Theme" uid="uid://dfor1aikf7ofe" path="res://main_theme.tres" id="3_wcoov"]
 [ext_resource type="StyleBox" uid="uid://dmcnesgpumjd1" path="res://scenes/card_ui/card_base_stylebox.tres" id="4_0nfo2"]
 [ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="5_jklsh"]
