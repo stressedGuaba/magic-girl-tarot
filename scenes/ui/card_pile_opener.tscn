@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8abwugpk2xcp"]
+
+[ext_resource type="Texture2D" uid="uid://6lduqrtab338" path="res://TEMP assets/Temp Art/heartT.png" id="1_7w0ip"]
+
+[node name="CardPileOpener" type="TextureButton"]
+offset_right = 72.0
+offset_bottom = 72.0
+texture_normal = ExtResource("1_7w0ip")
+ignore_texture_size = true
+stretch_mode = 4

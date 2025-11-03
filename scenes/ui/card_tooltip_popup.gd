@@ -10,10 +10,6 @@ func _ready() -> void:
 	for card: CardMenuUI in tooltip_card.get_children():
 		card.queue_free()
 	
-	hide_tooltip()
-	await get_tree().create_timer(3.0).timeout
-	show_tooltip(preload("res://characters/Magic Girl 1/Cards/slash.tres"))
-	
 
 func show_tooltip(card: Card) -> void:
 	var new_card := CARD_MENU_UI_SCENE.instantiate() as CardMenuUI
@@ -29,7 +25,10 @@ func hide_tooltip() -> void:
 		return
 	
 	for card: CardMenuUI in tooltip_card.get_children():
-		card.quee 
+		card.queue_free()
+	
+	hide()
 
 func _on_gui_input(event: InputEvent) -> void:
-	pass # Replace with function body.
+	if event.is_action_pressed("left_mouse"):
+		hide_tooltip()
